@@ -36,6 +36,9 @@ Before the robot can begin following a line, it must first undergo calibration. 
 
 Spinny's calibration process is fully autonomous, initiated upon power-up. The robot performs a series of movements, moving left and right to ensure that the sensor readings are optimized for the current environment.
 
+## PID Approach
+Spinny utilizes a Proportional-Integral-Derivative (PID) control algorithm to track the line and make precise adjustments to its trajectory. The PID control system continuously calculates an error value as the difference between a desired setpoint and the current process variable. The controller then uses the error value to calculate and adjust the control output, in this case, the speed of the motors. The proportional, integral, and derivative constants (kp, ki, and kd) are used to fine-tune the performance of the controller, ensuring stable and accurate navigation.
+
 ## Control
 The control system employed by the Spinny line follower is a PID controller. A PID controller is a control loop feedback mechanism that continuously calculates an error value as the difference between a desired setpoint and the current process variable. The controller then uses the error value to calculate and adjust the control output, in this case, the speed of the motors.
 
@@ -60,6 +63,8 @@ Click on the picture to see Spinny in action:
 ## Why "Spinny"?
 Click **[(here)](http://www.youtube.com/watch?feature=player_embedded&v=DC57d_xXY_A)** to find the answer.
 
+## Repository of Teammate
+The repository of my teammate can be found **[(here)](https://github.com/ZahariaDiana132/Spinny---line-follower-robot)**.
 
 ## Conclusion
 Spinny is a highly advanced line follower robot, capable of navigating complex environments with ease and precision. Its robust design, autonomous calibration, and advanced control algorithm make it an ideal choice for a wide range of applications. With Spinny, you can be confident that your robot will perform at the highest level.
